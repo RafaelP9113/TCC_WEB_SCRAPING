@@ -19,10 +19,31 @@ namespace TCC_WEB_SCRAPING.Controllers
         {
             string url = "https://en.wikipedia.org/wiki/List_of_programmers";
 
-            var path = @"C:/Users/Ronieri/Documents/GitHub/TCC_WEB_SCRAPING/HTML_FILES/FurnaceTable.html";
+            //var path = @"C:/Users/Ronieri/Documents/GitHub/TCC_WEB_SCRAPING/HTML_FILES/FurnaceTable.html"; // PC
+            var path = @"C:/Users/rafaelpinheiro/Desktop/Rafael/GIT/TCC_WEB_SCRAPING/HTML_FILES/1ZoneDataCenterCRAC_wApproachTempTable.html";
 
             var doc = new HtmlDocument();
             doc.Load(path);
+            string StringDoc = doc.Text;
+            int index = StringDoc.IndexOf("Total Site Energy");
+            string TotalSiteEnergy = "";
+            TotalSiteEnergy = StringDoc.Substring((index + 47), 11);
+            TotalSiteEnergy = TotalSiteEnergy.TrimStart();
+
+            index = StringDoc.IndexOf("Net Site Energy");
+            string NetSiteEnergy = "";
+            NetSiteEnergy = StringDoc.Substring((index + 47), 9);
+            NetSiteEnergy = NetSiteEnergy.TrimStart();
+
+            index = StringDoc.IndexOf("Total Source Energy");
+            string TotalSourceEnergy = "";
+            TotalSourceEnergy = StringDoc.Substring((index + 48), 12);
+            TotalSourceEnergy = TotalSourceEnergy.TrimStart();
+
+            index = StringDoc.IndexOf("Net Source Energy");
+            string NetSourceEnergy = "";
+            NetSourceEnergy = StringDoc.Substring((index + 47), 11);
+            NetSourceEnergy = NetSourceEnergy.TrimStart();
 
             var node = doc.DocumentNode.SelectSingleNode("//body");
 
