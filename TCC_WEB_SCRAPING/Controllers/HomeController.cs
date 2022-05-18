@@ -18,6 +18,14 @@ namespace TCC_WEB_SCRAPING.Controllers
         public ActionResult Index()
         {
             string url = "https://en.wikipedia.org/wiki/List_of_programmers";
+
+            var path = @"C:/Users/Ronieri/Documents/GitHub/TCC_WEB_SCRAPING/HTML_FILES/FurnaceTable.html";
+
+            var doc = new HtmlDocument();
+            doc.Load(path);
+
+            var node = doc.DocumentNode.SelectSingleNode("//body");
+
             var response = CallUrl(url).Result;
             var linkList = ParseHtml(response);
             WriteToCsv(linkList);
