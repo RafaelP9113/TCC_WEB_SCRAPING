@@ -26,8 +26,8 @@ namespace TCC_WEB_SCRAPING.Controllers
             string url = "https://en.wikipedia.org/wiki/List_of_programmers";
 
             //var path = @"C:/Users/Ronieri/Documents/GitHub/TCC_WEB_SCRAPING/HTML_FILES/FurnaceTable.html"; // PC
-            //var path = @"C:/Users/rafaelpinheiro/Desktop/Rafael/GIT/TCC_WEB_SCRAPING/HTML_FILES/1ZoneDataCenterCRAC_wApproachTempTable.html";  // Note trampo
-            var path = @"C:\Users\Rafael\Desktop\Rafael\GIT\TCC_WEB_SCRAPING\HTML_FILES\1ZoneDataCenterCRAC_wApproachTempTable.html"; // Note facul
+            var path = @"C:/Users/rafaelpinheiro/Desktop/Rafael/GIT/TCC_WEB_SCRAPING/HTML_FILES/1ZoneDataCenterCRAC_wApproachTempTable.html";  // Note trampo
+            //var path = @"C:\Users\Rafael\Desktop\Rafael\GIT\TCC_WEB_SCRAPING\HTML_FILES\1ZoneDataCenterCRAC_wApproachTempTable.html"; // Note facul
 
             var doc = new HtmlDocument();
             doc.Load(path);
@@ -56,7 +56,7 @@ namespace TCC_WEB_SCRAPING.Controllers
 
             //var response = CallUrl(url).Result;
             var tituloValors = ParseHtml(StringDoc);
-            //WriteToCsv(linkList);
+            WriteToCsv(tituloValors);
 
             
             return View();
@@ -74,7 +74,7 @@ namespace TCC_WEB_SCRAPING.Controllers
         private Dictionary<string,string> ParseHtml(string html)
         {
 
-            string[] Titulo = null;
+            string[] Titulo = new string[18];
             Titulo[0] = "Total Site Energy";
             Titulo[1] = "Net Site Energy";
             Titulo[2] = "Total Source Energy";
@@ -94,7 +94,7 @@ namespace TCC_WEB_SCRAPING.Controllers
             Titulo[16] = "Refrigeration";
             Titulo[17] = "Generators";
 
-            int[] index = null;
+            int[] index = new int[18];
             index[0] = 1;
             index[1] = 1;
             index[2] = 1;
@@ -114,7 +114,7 @@ namespace TCC_WEB_SCRAPING.Controllers
             index[16] = 13;
             index[17] = 13;
 
-            string[] Categoria = null;
+            string[] Categoria = new string[13];
             Categoria[0] = "Electricity [GJ]";
             Categoria[1] = "Natural Gas [GJ]";
             Categoria[2] = "Gasoline [GJ]";
@@ -140,13 +140,11 @@ namespace TCC_WEB_SCRAPING.Controllers
             var htmlNodes = htmlDoc.DocumentNode.Descendants("td")
                     .ToList();
 
-            List<TituloValor> tituloValors = new List<TituloValor>();
             Dictionary<string, string> Dict = new Dictionary<string, string>();
 
-            TituloValor tituloValor = new TituloValor();
 
-            Dict.Add(htmlNodes[4].InnerText, tituloValor.valor = htmlNodes[5].InnerText.TrimStart());
-            Dict.Add(htmlNodes[8].InnerText, tituloValor.valor = htmlNodes[9].InnerText.TrimStart());
+
+
 
             for (int i = 0; i < htmlNodes.Count; i++)
             {
@@ -154,7 +152,7 @@ namespace TCC_WEB_SCRAPING.Controllers
                 {
                     if (Titulo[j] == htmlNodes[i].InnerText)
                     {
-                        int count = index[i];
+                        int count = index[j];
                         if (count < 10)
                         {
                             Dict.Add(htmlNodes[i].InnerText, htmlNodes[i + count].InnerText);
@@ -163,32 +161,29 @@ namespace TCC_WEB_SCRAPING.Controllers
                         {
                             for(int k = 0; k < count; k++)
                             {
-                                Dict.Add((Titulo[j] + Categoria[k]), htmlNodes[i + k + 1].InnerText);
+                                if (Dict.Count != 186)
+                                {
+                                    Dict.Add((Titulo[j] + " " + Categoria[k]), htmlNodes[i + k + 1].InnerText);
+                                }
                             }
-                        }
+                            }
                     }
                 }
 
             }
-
-
-
-
-            
-
             return Dict;
 
         }
 
-        private void WriteToCsv(List<string> links)
+        private void WriteToCsv(Dictionary<string,string> Dict)
         {
             StringBuilder sb = new StringBuilder();
-            foreach (var link in links)
+            foreach (var entry in Dict)
             {
-                sb.AppendLine(link);
+                sb.AppendLine($"{entry.Key};{entry.Value}") ;
             }
 
-            System.IO.File.WriteAllText("links.csv", sb.ToString());
+            System.IO.File.WriteAllText("C:/Users/rafaelpinheiro/Desktop/Rafael/Pasta.csv", sb.ToString());
         }
 
 
