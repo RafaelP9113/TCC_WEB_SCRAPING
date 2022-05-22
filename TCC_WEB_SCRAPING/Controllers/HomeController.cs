@@ -47,16 +47,18 @@ namespace TCC_WEB_SCRAPING.Controllers
             //TotalSourceEnergy = StringDoc.Substring((index + 48), 12);
             //TotalSourceEnergy = TotalSourceEnergy.TrimStart();
 
-            //index = StringDoc.IndexOf("Net Source Energy");
-            //string NetSourceEnergy = "";
-            //NetSourceEnergy = StringDoc.Substring((index + 47), 11);
-            //NetSourceEnergy = NetSourceEnergy.TrimStart();
+            int index = StringDoc.IndexOf("Values gathered over");
+            string TotalHours = "";
+            TotalHours = StringDoc.Substring((index + 20), 13);
+            TotalHours = TotalHours.TrimStart();
 
             //var node = doc.DocumentNode.SelectSingleNode("//body");
+            Dictionary<string, string> Dict = new Dictionary<string, string>();
+            Dict.Add("Total Hours", TotalHours);
 
             //var response = CallUrl(url).Result;
             var tituloValors = ParseHtml(StringDoc);
-            WriteToCsv(tituloValors);
+            WriteToCsv(tituloValors, Dict);
 
             
             return View();
@@ -130,11 +132,6 @@ namespace TCC_WEB_SCRAPING.Controllers
             Categoria[12] = "Water [m3]";
 
 
-
-
-
-
-
             HtmlDocument htmlDoc = new HtmlDocument();
             htmlDoc.LoadHtml(html);
             var htmlNodes = htmlDoc.DocumentNode.Descendants("td")
@@ -143,12 +140,10 @@ namespace TCC_WEB_SCRAPING.Controllers
             Dictionary<string, string> Dict = new Dictionary<string, string>();
 
 
-
-
-
             for (int i = 0; i < htmlNodes.Count; i++)
             {
-                for(int j = 0; j < Titulo.Length; j++)
+                    
+                for (int j = 0; j < Titulo.Length; j++)
                 {
                     if (Titulo[j] == htmlNodes[i].InnerText)
                     {
@@ -159,25 +154,62 @@ namespace TCC_WEB_SCRAPING.Controllers
                         }
                         else
                         {
-                            for(int k = 0; k < count; k++)
+                            for (int k = 0; k < count; k++)
                             {
-                                if (Dict.Count != 186)
+                                if (Dict.Count < 186)
                                 {
-                                    Dict.Add((Titulo[j] + " " + Categoria[k]), htmlNodes[i + k + 1].InnerText);
+                                    Dict.Add(("Site " + Titulo[j] + " " + Categoria[k]), htmlNodes[i + k + 1].InnerText);
                                 }
                             }
-                            }
+                        }
                     }
                 }
-
             }
+
+            for (int i = 0; i < htmlNodes.Count; i++)
+            {
+
+                if (htmlNodes[i].InnerText == "Source District Heating [GJ]")
+                {
+                    int cont2 = 1;
+                    for (int s = 0; s < Titulo.Length; s++)
+                    {
+
+                        for (int j = 0; j < Titulo.Length; j++)
+                        {
+
+                            if (Titulo[j] == htmlNodes[i + cont2].InnerText)
+                            {
+                                int count = index[j] - 1;
+
+                                for (int k = 0; k < count; k++)
+                                {
+                                    if (Dict.Count < 354)
+                                    {
+                                        Dict.Add(("Source " + Titulo[j] + " " + Categoria[k]), htmlNodes[cont2 + i + k + 1].InnerText);
+                                    }
+                                }
+                            }
+                        }
+                        cont2 += 13;
+                    }
+                }
+            } 
+
+            
             return Dict;
 
         }
 
-        private void WriteToCsv(Dictionary<string,string> Dict)
+        private void WriteToCsv(Dictionary<string,string> Dict, Dictionary<string, string> Hours)
         {
             StringBuilder sb = new StringBuilder();
+
+            foreach (var entry in Hours)
+            {
+                sb.AppendLine($"{entry.Key};{entry.Value}");
+            }
+
             foreach (var entry in Dict)
             {
                 sb.AppendLine($"{entry.Key};{entry.Value}") ;
