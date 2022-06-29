@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Net;
 using System.Text;
 using System.IO;
+using System.Diagnostics;
 
 namespace TCC_WEB_SCRAPING.Controllers
 {
@@ -23,42 +24,42 @@ namespace TCC_WEB_SCRAPING.Controllers
         }
         public ActionResult Index()
         {
-            string url = "https://en.wikipedia.org/wiki/List_of_programmers";
 
-            //var path = @"C:/Users/Ronieri/Documents/GitHub/TCC_WEB_SCRAPING/HTML_FILES/FurnaceTable.html"; // PC
-            var path = @"C:/Users/rafaelpinheiro/Desktop/Rafael/GIT/TCC_WEB_SCRAPING/HTML_FILES/1ZoneDataCenterCRAC_wApproachTempTable.html";  // Note trampo
-            //var path = @"C:\Users\Rafael\Desktop\Rafael\GIT\TCC_WEB_SCRAPING\HTML_FILES\1ZoneDataCenterCRAC_wApproachTempTable.html"; // Note facul
+            
+            //string command = "/C cd C:/Program Files/KNIME && knime --launcher.suppressErrors -reset -nosplash -application org.knime.product.KNIME_BATCH_APPLICATION -workflowDir=\"C:/Users/rafaelpinheiro/knime-workspace/TCC_WEB_SCRAPING\"";
 
-            var doc = new HtmlDocument();
-            doc.Load(path);
-            string StringDoc = doc.Text;
-            //int index = StringDoc.IndexOf("Total Site Energy");
-            //string TotalSiteEnergy = "";
-            //TotalSiteEnergy = StringDoc.Substring((index + 47), 11);
-            //TotalSiteEnergy = TotalSiteEnergy.TrimStart();
 
-            //index = StringDoc.IndexOf("Net Site Energy");
-            //string NetSiteEnergy = "";
-            //NetSiteEnergy = StringDoc.Substring((index + 47), 9);
-            //NetSiteEnergy = NetSiteEnergy.TrimStart();
+            //ProcessStartInfo info = new ProcessStartInfo("cmd.exe");
+            //info.UseShellExecute = true;
+            //info.WorkingDirectory = "C:/Program Files/KNIME";
+            //info.Arguments = command;
+            //Process.Start(info);
+            
 
-            //index = StringDoc.IndexOf("Total Source Energy");
-            //string TotalSourceEnergy = "";
-            //TotalSourceEnergy = StringDoc.Substring((index + 48), 12);
-            //TotalSourceEnergy = TotalSourceEnergy.TrimStart();
 
-            int index = StringDoc.IndexOf("Values gathered over");
-            string TotalHours = "";
-            TotalHours = StringDoc.Substring((index + 20), 13);
-            TotalHours = TotalHours.TrimStart();
+            ////var path = @"C:/Users/Ronieri/Documents/GitHub/TCC_WEB_SCRAPING/HTML_FILES/FurnaceTable.html"; // PC
+            //var path = @"C:/Users/rafaelpinheiro/Desktop/Rafael/GIT/TCC_WEB_SCRAPING/HTML_FILES/1ZoneDataCenterCRAC_wApproachTempTable.html";  // Note trampo
+            ////var path = @"C:\Users\Rafael\Desktop\Rafael\GIT\TCC_WEB_SCRAPING\HTML_FILES\1ZoneDataCenterCRAC_wApproachTempTable.html"; // Note facul
 
-            //var node = doc.DocumentNode.SelectSingleNode("//body");
-            Dictionary<string, string> Dict = new Dictionary<string, string>();
-            Dict.Add("Total Hours", TotalHours);
+            //var doc = new HtmlDocument();
+            //doc.Load(path);
+            //string StringDoc = doc.Text;
 
-            //var response = CallUrl(url).Result;
-            var tituloValors = ParseHtml(StringDoc);
-            WriteToCsv(tituloValors, Dict);
+
+            //int index = StringDoc.IndexOf("Values gathered over");
+            //string TotalHours = "";
+            //TotalHours = StringDoc.Substring((index + 20), 13);
+            //TotalHours = TotalHours.TrimStart();
+
+
+            //Dictionary<string, string> Dict = new Dictionary<string, string>();
+            //Dict.Add("Total Hours", TotalHours);
+
+
+            //var tituloValors = ParseHtml(StringDoc);
+            //WriteToCsv(tituloValors, Dict);
+
+
 
             
             return View();
@@ -205,6 +206,14 @@ namespace TCC_WEB_SCRAPING.Controllers
         {
             StringBuilder sb = new StringBuilder();
 
+            DateTime thisDay = DateTime.Today;
+            string Dataatual = thisDay.ToString("d");
+
+            Dictionary<string, string> Desc = new Dictionary<string, string>();
+            Dict.Add("Description", "Descrição de teste");
+            Dict.Add("Data", Dataatual);
+
+
             foreach (var entry in Hours)
             {
                 sb.AppendLine($"{entry.Key};{entry.Value}");
@@ -212,25 +221,30 @@ namespace TCC_WEB_SCRAPING.Controllers
 
             foreach (var entry in Dict)
             {
-                sb.AppendLine($"{entry.Key};{entry.Value}") ;
+                sb.AppendLine($"{entry.Key};{entry.Value}");
             }
 
-            System.IO.File.WriteAllText("C:/Users/rafaelpinheiro/Desktop/Rafael/Pasta.csv", sb.ToString());
+            foreach (var entry in Desc)
+            {
+                sb.AppendLine($"{entry.Key};{entry.Value}");
+            }
+
+            System.IO.File.WriteAllText("C:/Users/rafaelpinheiro/knime-workspace/CargaEnergyPlus.csv", sb.ToString());
         }
 
 
-        //public ActionResult About()
-        //{
-        //    ViewBag.Message = "Your application description page.";
+        public ActionResult About()
+        {
+            ViewBag.Message = "Your application description page.";
 
-        //    return View();
-        //}
+            return View();
+        }
 
-        //public ActionResult Contact()
-        //{
-        //    ViewBag.Message = "Your contact page.";
+        public ActionResult Contact()
+        {
+            ViewBag.Message = "Your contact page.";
 
-        //    return View();
-        //}
+            return View();
+        }
     }
 }
