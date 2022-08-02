@@ -1,0 +1,357 @@
+Total Hours;1488.00
+Total Site Energy;      493.67
+Net Site Energy;      493.67
+Total Source Energy;     1563.46
+Net Source Energy;     1563.46
+Site Heating Electricity [GJ];        0.00
+Site Heating Natural Gas [GJ];        0.00
+Site Heating Gasoline [GJ];        0.00
+Site Heating Diesel [GJ];        0.00
+Site Heating Coal [GJ];        0.00
+Site Heating Fuel Oil No 1 [GJ];        0.00
+Site Heating Fuel Oil No 2 [GJ];        0.00
+Site Heating Propane [GJ];        0.00
+Site Heating Other Fuel 1 [GJ];        0.00
+Site Heating Other Fuel 2 [GJ];        0.00
+Site Heating District Cooling [GJ];        0.00
+Site Heating District Heating [GJ];        0.00
+Site Heating Water [m3];        0.00
+Site Cooling Electricity [GJ];       67.51
+Site Cooling Natural Gas [GJ];        0.00
+Site Cooling Gasoline [GJ];        0.00
+Site Cooling Diesel [GJ];        0.00
+Site Cooling Coal [GJ];        0.00
+Site Cooling Fuel Oil No 1 [GJ];        0.00
+Site Cooling Fuel Oil No 2 [GJ];        0.00
+Site Cooling Propane [GJ];        0.00
+Site Cooling Other Fuel 1 [GJ];        0.00
+Site Cooling Other Fuel 2 [GJ];        0.00
+Site Cooling District Cooling [GJ];        0.00
+Site Cooling District Heating [GJ];        0.00
+Site Cooling Water [m3];        0.00
+Site Interior Lighting Electricity [GJ];        0.00
+Site Interior Lighting Natural Gas [GJ];        0.00
+Site Interior Lighting Gasoline [GJ];        0.00
+Site Interior Lighting Diesel [GJ];        0.00
+Site Interior Lighting Coal [GJ];        0.00
+Site Interior Lighting Fuel Oil No 1 [GJ];        0.00
+Site Interior Lighting Fuel Oil No 2 [GJ];        0.00
+Site Interior Lighting Propane [GJ];        0.00
+Site Interior Lighting Other Fuel 1 [GJ];        0.00
+Site Interior Lighting Other Fuel 2 [GJ];        0.00
+Site Interior Lighting District Cooling [GJ];        0.00
+Site Interior Lighting District Heating [GJ];        0.00
+Site Interior Lighting Water [m3];        0.00
+Site Exterior Lighting Electricity [GJ];        0.00
+Site Exterior Lighting Natural Gas [GJ];        0.00
+Site Exterior Lighting Gasoline [GJ];        0.00
+Site Exterior Lighting Diesel [GJ];        0.00
+Site Exterior Lighting Coal [GJ];        0.00
+Site Exterior Lighting Fuel Oil No 1 [GJ];        0.00
+Site Exterior Lighting Fuel Oil No 2 [GJ];        0.00
+Site Exterior Lighting Propane [GJ];        0.00
+Site Exterior Lighting Other Fuel 1 [GJ];        0.00
+Site Exterior Lighting Other Fuel 2 [GJ];        0.00
+Site Exterior Lighting District Cooling [GJ];        0.00
+Site Exterior Lighting District Heating [GJ];        0.00
+Site Exterior Lighting Water [m3];        0.00
+Site Interior Equipment Electricity [GJ];      403.50
+Site Interior Equipment Natural Gas [GJ];        0.00
+Site Interior Equipment Gasoline [GJ];        0.00
+Site Interior Equipment Diesel [GJ];        0.00
+Site Interior Equipment Coal [GJ];        0.00
+Site Interior Equipment Fuel Oil No 1 [GJ];        0.00
+Site Interior Equipment Fuel Oil No 2 [GJ];        0.00
+Site Interior Equipment Propane [GJ];        0.00
+Site Interior Equipment Other Fuel 1 [GJ];        0.00
+Site Interior Equipment Other Fuel 2 [GJ];        0.00
+Site Interior Equipment District Cooling [GJ];        0.00
+Site Interior Equipment District Heating [GJ];        0.00
+Site Interior Equipment Water [m3];        0.00
+Site Exterior Equipment Electricity [GJ];        0.00
+Site Exterior Equipment Natural Gas [GJ];        0.00
+Site Exterior Equipment Gasoline [GJ];        0.00
+Site Exterior Equipment Diesel [GJ];        0.00
+Site Exterior Equipment Coal [GJ];        0.00
+Site Exterior Equipment Fuel Oil No 1 [GJ];        0.00
+Site Exterior Equipment Fuel Oil No 2 [GJ];        0.00
+Site Exterior Equipment Propane [GJ];        0.00
+Site Exterior Equipment Other Fuel 1 [GJ];        0.00
+Site Exterior Equipment Other Fuel 2 [GJ];        0.00
+Site Exterior Equipment District Cooling [GJ];        0.00
+Site Exterior Equipment District Heating [GJ];        0.00
+Site Exterior Equipment Water [m3];        0.00
+Site Fans Electricity [GJ];       22.66
+Site Fans Natural Gas [GJ];        0.00
+Site Fans Gasoline [GJ];        0.00
+Site Fans Diesel [GJ];        0.00
+Site Fans Coal [GJ];        0.00
+Site Fans Fuel Oil No 1 [GJ];        0.00
+Site Fans Fuel Oil No 2 [GJ];        0.00
+Site Fans Propane [GJ];        0.00
+Site Fans Other Fuel 1 [GJ];        0.00
+Site Fans Other Fuel 2 [GJ];        0.00
+Site Fans District Cooling [GJ];        0.00
+Site Fans District Heating [GJ];        0.00
+Site Fans Water [m3];        0.00
+Site Pumps Electricity [GJ];        0.00
+Site Pumps Natural Gas [GJ];        0.00
+Site Pumps Gasoline [GJ];        0.00
+Site Pumps Diesel [GJ];        0.00
+Site Pumps Coal [GJ];        0.00
+Site Pumps Fuel Oil No 1 [GJ];        0.00
+Site Pumps Fuel Oil No 2 [GJ];        0.00
+Site Pumps Propane [GJ];        0.00
+Site Pumps Other Fuel 1 [GJ];        0.00
+Site Pumps Other Fuel 2 [GJ];        0.00
+Site Pumps District Cooling [GJ];        0.00
+Site Pumps District Heating [GJ];        0.00
+Site Pumps Water [m3];        0.00
+Site Heat Rejection Electricity [GJ];        0.00
+Site Heat Rejection Natural Gas [GJ];        0.00
+Site Heat Rejection Gasoline [GJ];        0.00
+Site Heat Rejection Diesel [GJ];        0.00
+Site Heat Rejection Coal [GJ];        0.00
+Site Heat Rejection Fuel Oil No 1 [GJ];        0.00
+Site Heat Rejection Fuel Oil No 2 [GJ];        0.00
+Site Heat Rejection Propane [GJ];        0.00
+Site Heat Rejection Other Fuel 1 [GJ];        0.00
+Site Heat Rejection Other Fuel 2 [GJ];        0.00
+Site Heat Rejection District Cooling [GJ];        0.00
+Site Heat Rejection District Heating [GJ];        0.00
+Site Heat Rejection Water [m3];        0.00
+Site Humidification Electricity [GJ];        0.00
+Site Humidification Natural Gas [GJ];        0.00
+Site Humidification Gasoline [GJ];        0.00
+Site Humidification Diesel [GJ];        0.00
+Site Humidification Coal [GJ];        0.00
+Site Humidification Fuel Oil No 1 [GJ];        0.00
+Site Humidification Fuel Oil No 2 [GJ];        0.00
+Site Humidification Propane [GJ];        0.00
+Site Humidification Other Fuel 1 [GJ];        0.00
+Site Humidification Other Fuel 2 [GJ];        0.00
+Site Humidification District Cooling [GJ];        0.00
+Site Humidification District Heating [GJ];        0.00
+Site Humidification Water [m3];        0.00
+Site Heat Recovery Electricity [GJ];        0.00
+Site Heat Recovery Natural Gas [GJ];        0.00
+Site Heat Recovery Gasoline [GJ];        0.00
+Site Heat Recovery Diesel [GJ];        0.00
+Site Heat Recovery Coal [GJ];        0.00
+Site Heat Recovery Fuel Oil No 1 [GJ];        0.00
+Site Heat Recovery Fuel Oil No 2 [GJ];        0.00
+Site Heat Recovery Propane [GJ];        0.00
+Site Heat Recovery Other Fuel 1 [GJ];        0.00
+Site Heat Recovery Other Fuel 2 [GJ];        0.00
+Site Heat Recovery District Cooling [GJ];        0.00
+Site Heat Recovery District Heating [GJ];        0.00
+Site Heat Recovery Water [m3];        0.00
+Site Water Systems Electricity [GJ];        0.00
+Site Water Systems Natural Gas [GJ];        0.00
+Site Water Systems Gasoline [GJ];        0.00
+Site Water Systems Diesel [GJ];        0.00
+Site Water Systems Coal [GJ];        0.00
+Site Water Systems Fuel Oil No 1 [GJ];        0.00
+Site Water Systems Fuel Oil No 2 [GJ];        0.00
+Site Water Systems Propane [GJ];        0.00
+Site Water Systems Other Fuel 1 [GJ];        0.00
+Site Water Systems Other Fuel 2 [GJ];        0.00
+Site Water Systems District Cooling [GJ];        0.00
+Site Water Systems District Heating [GJ];        0.00
+Site Water Systems Water [m3];        0.00
+Site Refrigeration Electricity [GJ];        0.00
+Site Refrigeration Natural Gas [GJ];        0.00
+Site Refrigeration Gasoline [GJ];        0.00
+Site Refrigeration Diesel [GJ];        0.00
+Site Refrigeration Coal [GJ];        0.00
+Site Refrigeration Fuel Oil No 1 [GJ];        0.00
+Site Refrigeration Fuel Oil No 2 [GJ];        0.00
+Site Refrigeration Propane [GJ];        0.00
+Site Refrigeration Other Fuel 1 [GJ];        0.00
+Site Refrigeration Other Fuel 2 [GJ];        0.00
+Site Refrigeration District Cooling [GJ];        0.00
+Site Refrigeration District Heating [GJ];        0.00
+Site Refrigeration Water [m3];        0.00
+Site Generators Electricity [GJ];        0.00
+Site Generators Natural Gas [GJ];        0.00
+Site Generators Gasoline [GJ];        0.00
+Site Generators Diesel [GJ];        0.00
+Site Generators Coal [GJ];        0.00
+Site Generators Fuel Oil No 1 [GJ];        0.00
+Site Generators Fuel Oil No 2 [GJ];        0.00
+Site Generators Propane [GJ];        0.00
+Site Generators Other Fuel 1 [GJ];        0.00
+Site Generators Other Fuel 2 [GJ];        0.00
+Site Generators District Cooling [GJ];        0.00
+Site Generators District Heating [GJ];        0.00
+Site Generators Water [m3];        0.00
+Source Heating Electricity [GJ];        0.00
+Source Heating Natural Gas [GJ];        0.00
+Source Heating Gasoline [GJ];        0.00
+Source Heating Diesel [GJ];        0.00
+Source Heating Coal [GJ];        0.00
+Source Heating Fuel Oil No 1 [GJ];        0.00
+Source Heating Fuel Oil No 2 [GJ];        0.00
+Source Heating Propane [GJ];        0.00
+Source Heating Other Fuel 1 [GJ];        0.00
+Source Heating Other Fuel 2 [GJ];        0.00
+Source Heating District Cooling [GJ];        0.00
+Source Heating District Heating [GJ];        0.00
+Source Cooling Electricity [GJ];      213.79
+Source Cooling Natural Gas [GJ];        0.00
+Source Cooling Gasoline [GJ];        0.00
+Source Cooling Diesel [GJ];        0.00
+Source Cooling Coal [GJ];        0.00
+Source Cooling Fuel Oil No 1 [GJ];        0.00
+Source Cooling Fuel Oil No 2 [GJ];        0.00
+Source Cooling Propane [GJ];        0.00
+Source Cooling Other Fuel 1 [GJ];        0.00
+Source Cooling Other Fuel 2 [GJ];        0.00
+Source Cooling District Cooling [GJ];        0.00
+Source Cooling District Heating [GJ];        0.00
+Source Interior Lighting Electricity [GJ];        0.00
+Source Interior Lighting Natural Gas [GJ];        0.00
+Source Interior Lighting Gasoline [GJ];        0.00
+Source Interior Lighting Diesel [GJ];        0.00
+Source Interior Lighting Coal [GJ];        0.00
+Source Interior Lighting Fuel Oil No 1 [GJ];        0.00
+Source Interior Lighting Fuel Oil No 2 [GJ];        0.00
+Source Interior Lighting Propane [GJ];        0.00
+Source Interior Lighting Other Fuel 1 [GJ];        0.00
+Source Interior Lighting Other Fuel 2 [GJ];        0.00
+Source Interior Lighting District Cooling [GJ];        0.00
+Source Interior Lighting District Heating [GJ];        0.00
+Source Exterior Lighting Electricity [GJ];        0.00
+Source Exterior Lighting Natural Gas [GJ];        0.00
+Source Exterior Lighting Gasoline [GJ];        0.00
+Source Exterior Lighting Diesel [GJ];        0.00
+Source Exterior Lighting Coal [GJ];        0.00
+Source Exterior Lighting Fuel Oil No 1 [GJ];        0.00
+Source Exterior Lighting Fuel Oil No 2 [GJ];        0.00
+Source Exterior Lighting Propane [GJ];        0.00
+Source Exterior Lighting Other Fuel 1 [GJ];        0.00
+Source Exterior Lighting Other Fuel 2 [GJ];        0.00
+Source Exterior Lighting District Cooling [GJ];        0.00
+Source Exterior Lighting District Heating [GJ];        0.00
+Source Interior Equipment Electricity [GJ];     1277.89
+Source Interior Equipment Natural Gas [GJ];        0.00
+Source Interior Equipment Gasoline [GJ];        0.00
+Source Interior Equipment Diesel [GJ];        0.00
+Source Interior Equipment Coal [GJ];        0.00
+Source Interior Equipment Fuel Oil No 1 [GJ];        0.00
+Source Interior Equipment Fuel Oil No 2 [GJ];        0.00
+Source Interior Equipment Propane [GJ];        0.00
+Source Interior Equipment Other Fuel 1 [GJ];        0.00
+Source Interior Equipment Other Fuel 2 [GJ];        0.00
+Source Interior Equipment District Cooling [GJ];        0.00
+Source Interior Equipment District Heating [GJ];        0.00
+Source Exterior Equipment Electricity [GJ];        0.00
+Source Exterior Equipment Natural Gas [GJ];        0.00
+Source Exterior Equipment Gasoline [GJ];        0.00
+Source Exterior Equipment Diesel [GJ];        0.00
+Source Exterior Equipment Coal [GJ];        0.00
+Source Exterior Equipment Fuel Oil No 1 [GJ];        0.00
+Source Exterior Equipment Fuel Oil No 2 [GJ];        0.00
+Source Exterior Equipment Propane [GJ];        0.00
+Source Exterior Equipment Other Fuel 1 [GJ];        0.00
+Source Exterior Equipment Other Fuel 2 [GJ];        0.00
+Source Exterior Equipment District Cooling [GJ];        0.00
+Source Exterior Equipment District Heating [GJ];        0.00
+Source Fans Electricity [GJ];       71.77
+Source Fans Natural Gas [GJ];        0.00
+Source Fans Gasoline [GJ];        0.00
+Source Fans Diesel [GJ];        0.00
+Source Fans Coal [GJ];        0.00
+Source Fans Fuel Oil No 1 [GJ];        0.00
+Source Fans Fuel Oil No 2 [GJ];        0.00
+Source Fans Propane [GJ];        0.00
+Source Fans Other Fuel 1 [GJ];        0.00
+Source Fans Other Fuel 2 [GJ];        0.00
+Source Fans District Cooling [GJ];        0.00
+Source Fans District Heating [GJ];        0.00
+Source Pumps Electricity [GJ];        0.00
+Source Pumps Natural Gas [GJ];        0.00
+Source Pumps Gasoline [GJ];        0.00
+Source Pumps Diesel [GJ];        0.00
+Source Pumps Coal [GJ];        0.00
+Source Pumps Fuel Oil No 1 [GJ];        0.00
+Source Pumps Fuel Oil No 2 [GJ];        0.00
+Source Pumps Propane [GJ];        0.00
+Source Pumps Other Fuel 1 [GJ];        0.00
+Source Pumps Other Fuel 2 [GJ];        0.00
+Source Pumps District Cooling [GJ];        0.00
+Source Pumps District Heating [GJ];        0.00
+Source Heat Rejection Electricity [GJ];        0.00
+Source Heat Rejection Natural Gas [GJ];        0.00
+Source Heat Rejection Gasoline [GJ];        0.00
+Source Heat Rejection Diesel [GJ];        0.00
+Source Heat Rejection Coal [GJ];        0.00
+Source Heat Rejection Fuel Oil No 1 [GJ];        0.00
+Source Heat Rejection Fuel Oil No 2 [GJ];        0.00
+Source Heat Rejection Propane [GJ];        0.00
+Source Heat Rejection Other Fuel 1 [GJ];        0.00
+Source Heat Rejection Other Fuel 2 [GJ];        0.00
+Source Heat Rejection District Cooling [GJ];        0.00
+Source Heat Rejection District Heating [GJ];        0.00
+Source Humidification Electricity [GJ];        0.00
+Source Humidification Natural Gas [GJ];        0.00
+Source Humidification Gasoline [GJ];        0.00
+Source Humidification Diesel [GJ];        0.00
+Source Humidification Coal [GJ];        0.00
+Source Humidification Fuel Oil No 1 [GJ];        0.00
+Source Humidification Fuel Oil No 2 [GJ];        0.00
+Source Humidification Propane [GJ];        0.00
+Source Humidification Other Fuel 1 [GJ];        0.00
+Source Humidification Other Fuel 2 [GJ];        0.00
+Source Humidification District Cooling [GJ];        0.00
+Source Humidification District Heating [GJ];        0.00
+Source Heat Recovery Electricity [GJ];        0.00
+Source Heat Recovery Natural Gas [GJ];        0.00
+Source Heat Recovery Gasoline [GJ];        0.00
+Source Heat Recovery Diesel [GJ];        0.00
+Source Heat Recovery Coal [GJ];        0.00
+Source Heat Recovery Fuel Oil No 1 [GJ];        0.00
+Source Heat Recovery Fuel Oil No 2 [GJ];        0.00
+Source Heat Recovery Propane [GJ];        0.00
+Source Heat Recovery Other Fuel 1 [GJ];        0.00
+Source Heat Recovery Other Fuel 2 [GJ];        0.00
+Source Heat Recovery District Cooling [GJ];        0.00
+Source Heat Recovery District Heating [GJ];        0.00
+Source Water Systems Electricity [GJ];        0.00
+Source Water Systems Natural Gas [GJ];        0.00
+Source Water Systems Gasoline [GJ];        0.00
+Source Water Systems Diesel [GJ];        0.00
+Source Water Systems Coal [GJ];        0.00
+Source Water Systems Fuel Oil No 1 [GJ];        0.00
+Source Water Systems Fuel Oil No 2 [GJ];        0.00
+Source Water Systems Propane [GJ];        0.00
+Source Water Systems Other Fuel 1 [GJ];        0.00
+Source Water Systems Other Fuel 2 [GJ];        0.00
+Source Water Systems District Cooling [GJ];        0.00
+Source Water Systems District Heating [GJ];        0.00
+Source Refrigeration Electricity [GJ];        0.00
+Source Refrigeration Natural Gas [GJ];        0.00
+Source Refrigeration Gasoline [GJ];        0.00
+Source Refrigeration Diesel [GJ];        0.00
+Source Refrigeration Coal [GJ];        0.00
+Source Refrigeration Fuel Oil No 1 [GJ];        0.00
+Source Refrigeration Fuel Oil No 2 [GJ];        0.00
+Source Refrigeration Propane [GJ];        0.00
+Source Refrigeration Other Fuel 1 [GJ];        0.00
+Source Refrigeration Other Fuel 2 [GJ];        0.00
+Source Refrigeration District Cooling [GJ];        0.00
+Source Refrigeration District Heating [GJ];        0.00
+Source Generators Electricity [GJ];        0.00
+Source Generators Natural Gas [GJ];        0.00
+Source Generators Gasoline [GJ];        0.00
+Source Generators Diesel [GJ];        0.00
+Source Generators Coal [GJ];        0.00
+Source Generators Fuel Oil No 1 [GJ];        0.00
+Source Generators Fuel Oil No 2 [GJ];        0.00
+Source Generators Propane [GJ];        0.00
+Source Generators Other Fuel 1 [GJ];        0.00
+Source Generators Other Fuel 2 [GJ];        0.00
+Source Generators District Cooling [GJ];        0.00
+Source Generators District Heating [GJ];        0.00
+Description;Descrição de teste
+Data;12/06/2022
