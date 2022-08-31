@@ -75,9 +75,17 @@ namespace TCC_WEB_SCRAPING.Controllers
         [HttpPost]
         public ActionResult Submit(Response response)
         {
-            Dosubmit(response);
+            try
+            {
+                Dosubmit(response);
+            }
+            catch 
+            {
+                return View("Failed");
+            }
+            
+            return View("Sucess");
 
-            return View("Index");
         }
 
 #region Working
